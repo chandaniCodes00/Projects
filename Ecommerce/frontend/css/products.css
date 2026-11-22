@@ -1,0 +1,22 @@
+.categoryFilters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.categoryFilters button {
+  padding: 10px 20px;
+  border: 1px solid #172554;
+  border-radius: 25px;
+  background: white;
+  color: #172554;
+  cursor: pointer;
+}
+
+.categoryFilters button.activeFilter,
+.categoryFilters button:hover {
+  background: #172554;
+  color: white;
+}

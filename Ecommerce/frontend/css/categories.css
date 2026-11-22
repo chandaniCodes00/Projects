@@ -1,0 +1,91 @@
+
+.categoriesPage {
+  min-height: 75vh;
+  padding: 50px 6%;
+  background: #f8fafc;
+}
+
+.categoriesHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.categoriesHeader h1 {
+  color: #172554;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.categoriesHeader p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.categoryCard {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.categoryCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.categoryIcon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff7ed;
+  color: #f59e0b;
+  border-radius: 50%;
+  font-size: 26px;
+}
+
+.categoryCard h3 {
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.categoryCard p {
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.exploreBtn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #172554;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.exploreBtn:hover {
+  background: #f59e0b;
+}
+
+@media (max-width: 768px) {
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .categoriesGrid {
+    grid-template-columns: 1fr;
+  }
+}

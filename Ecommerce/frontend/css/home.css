@@ -1,0 +1,156 @@
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  min-height: 350px;
+  background: linear-gradient(120deg, #dbeafe, #eff6ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.heroSection h1 {
+  font-size: 42px;
+  color: #172554;
+  margin-bottom: 15px;
+}
+
+.heroSection p {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.showNow {
+  background-color: #172554;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.showNow:hover {
+  background-color: #f59e0b;
+  color: #172554;
+}
+
+/* Categories Section */
+.categories {
+  padding: 50px 6%;
+  text-align: center;
+}
+
+.categories h2,
+.productFeature h2 {
+  font-size: 28px;
+  color: #172554;
+  margin-bottom: 30px;
+}
+
+.categories > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.categories > div > div {
+  background-color: #eff6ff;
+  padding: 35px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.categories > div > div:hover {
+  background-color: #dbeafe;
+  transform: translateY(-5px);
+}
+
+.categories h3 {
+  color: #172554;
+  font-size: 18px;
+}
+
+/* Featured Products */
+.productFeature {
+  padding: 50px 6%;
+  text-align: center;
+}
+
+.productFeature > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.productFeature > div > div {
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.productFeature > div > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.productFeature img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.productFeature h3 {
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.productFeature p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.productFeature button {
+  background-color: #172554;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.productFeature button:hover {
+  background-color: #f59e0b;
+  color: #172554;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categories > div,
+  .productFeature > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroSection h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories > div,
+  .productFeature > div {
+    grid-template-columns: 1fr;
+  }
+
+  .heroSection h1 {
+    font-size: 27px;
+  }
+}
